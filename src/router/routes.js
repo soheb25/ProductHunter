@@ -3,42 +3,42 @@ import { useUserStore } from '@/store/user';
 
 const routes = [
   {
-    path: '/',
+    path: '/ProductHunter/',
     name: 'Login',
     component: () => import('@/views/Login.vue'),
   },
   {
-    path: '/home',
+    path: '/ProductHunter/home',
     name: 'Home',
     component: () => import('@/views/Home.vue'),
   },
   {
-    path: '/product/:id',
+    path: '/ProductHunter/product/:id',
     name: 'Product',
     component: () => import('@/views/Product.vue'),
   },
   {
-    path: '/cart',
+    path: '/ProductHunter/cart',
     name: 'Cart',
     component: () => import('@/views/Cart.vue'),
   },
   {
-    path: '/register',
+    path: '/ProductHunter/register',
     name: 'Register',
     component: () => import('@/views/Register.vue')
   },
   {
-    path: '/admin-login',
+    path: '/ProductHunter/admin-login',
     name: 'AdminLogin',
     component: () => import('@/views/admin/AdminLogin.vue'),
   },
   {
-    path: '/admin',
+    path: '/ProductHunter/admin',
     name: 'Admin',
     component: () => import('@/views/admin/Admin.vue'),
   },
   {
-    path: '/order',
+    path: '/ProductHunter/order',
     name: 'Order',
     component: () => import('@/views/OrderHistory.vue'),
     meta : {requiresAuth : true}

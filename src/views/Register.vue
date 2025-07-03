@@ -10,7 +10,7 @@
         <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg">Register</button>
         <p class="text-center mt-4 text-sm">
           Already have an account?
-          <router-link to="/" class="text-blue-600 hover:underline">Login</router-link>
+          <router-link to="/ProductHunter/" class="text-blue-600 hover:underline">Login</router-link>
         </p>
       </form>
     </div>
@@ -33,7 +33,7 @@ export default {
       const userStore = useUserStore()
       try {
         userStore.register(this.username, this.password)
-        this.$router.push('/')
+        this.$router.push('/ProductHunter/')
       } catch (err) {
         this.error = err.message
       }

@@ -4,10 +4,10 @@
       <div class="container mx-auto flex justify-between items-center">
         <router-link to="/" class="sm:text-2xl text-sm font-bold text-white">ProductHunter</router-link>
         <nav class="sm:space-x-4 space-x-2">
-          <router-link to="/home" class="text-white hover:text-yellow-50">Home</router-link>
-          <router-link to="/cart" class="text-white hover:text-yellow-50">Cart</router-link>
-          <router-link to="/order" class="text-white hover:text-yellow-50">Orders</router-link>
-          <router-link to="/admin-login" class="text-sm text-white hover:underline">Admin</router-link>
+          <router-link to="/ProductHunter/home" class="text-white hover:text-yellow-50">Home</router-link>
+          <router-link to="/ProductHunter/cart" class="text-white hover:text-yellow-50">Cart</router-link>
+          <router-link to="/ProductHunter/order" class="text-white hover:text-yellow-50">Orders</router-link>
+          <router-link to="/ProductHunter/admin-login" class="text-sm text-white hover:underline">Admin</router-link>
           <button v-if="user.currentUser" @click="logout" class="text-red-500 ml-4">Logout</button>
         </nav>
       </div>
@@ -47,7 +47,7 @@ export default {
   methods: {
     logout() {
       this.user.logout()
-      this.$router.push('/')
+      this.$router.push('/ProductHunter/')
     },
     backToAdmin() {
       const adminSession = localStorage.getItem('adminSession')

@@ -30,7 +30,7 @@ export default {
             const store = useUserStore()
             if (this.username === 'admin' && this.password === 'admin123') {
                 store.login(this.username, this.password)
-                this.$router.push('/admin')
+                this.$router.push('/ProductHunter/admin')
             } else {
                 this.error = 'Invalid admin credentials'
             }

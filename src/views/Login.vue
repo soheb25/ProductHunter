@@ -32,7 +32,7 @@ export default {
       const userStore = useUserStore()
       try {
         userStore.login(this.username, this.password)
-        this.$router.push('/home')
+        this.$router.push('/ProductHunter/home')
       } catch (err) {
         this.error = err.message
       }

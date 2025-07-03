@@ -213,7 +213,7 @@ export default {
 
         localStorage.setItem('currentUser', JSON.stringify({ username }))
         alert(`You are logged in as "${username}"`)
-        this.$router.push('/home')
+        this.$router.push('/ProductHunter/home')
       } else {
         alert('User not found')
       }

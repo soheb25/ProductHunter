@@ -111,7 +111,7 @@ export default {
     handlePayment() {
       if (!this.user.currentUser) {
         alert("You must be logged in to complete payment.")
-        this.$router.push('/login')
+        this.$router.push('/ProductHunter/login')
         return
       }
       const order = {
@@ -130,7 +130,7 @@ export default {
 
       alert(`🎉 Payment of $${this.total.toFixed(2)} successful!`)
       this.cart.clearCart()
-      this.$router.push('/home')
+      this.$router.push('/ProductHunter/home')
     },
     clearSelected() {
       this.selectedItems.forEach(id => this.cart.removeFromCart(id))
