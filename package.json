@@ -1,0 +1,33 @@
+{
+  "name": "dash",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.8",
+    "flowbite": "^2.5.2",
+    "pinia": "^2.0.22",
+    "pinia-plugin-persistedstate": "^4.2.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "tooltip": "^1.6.1",
+    "vue": "^3.5.13",
+    "vue-country-flag-next": "^2.3.2",
+    "vue-multiselect": "^3.1.0",
+    "vue-router": "^4.5.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^6.0.1",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  }
+}
