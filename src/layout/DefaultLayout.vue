@@ -55,7 +55,7 @@ export default {
         localStorage.setItem('currentUser', adminSession)
         localStorage.removeItem('adminSession')
         alert('Restored Admin Session')
-        this.$router.push('/admin')
+        this.$router.push('/ProductHunter/admin')
       } else {
         alert('No Admin Session Found')
       }

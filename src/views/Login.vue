@@ -9,7 +9,7 @@
         <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg">Login</button>
         <p class="text-center mt-4 text-sm">
           Don't have an account?
-          <router-link to="/register" class="text-blue-600 hover:underline">Register</router-link>
+          <router-link to="/ProductHunter/register" class="text-blue-600 hover:underline">Register</router-link>
         </p>
       </form>
     </div>
